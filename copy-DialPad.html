@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css" media="all">
+        input {
+            border: none;
+            width: 70%;
+            text-align: center;
+            padding: 5%;
+            font-size: 20px;
+        }
+        .maincontainer {
+            padding: 40px;
+            height: 100vh;
+
+
+            border: 1px solid;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .icon {
+            border-radius: 50%;
+            padding: 10px;
+            color: white;
+            background-color: blue;
+            position: relative;
+            right: 5px;
+            text-align: center;
+        }
+
+        #opt {
+
+            border: none;
+        }
+
+        img {
+            position: relative;
+            top: 10px;
+            padding: 5px;
+        }
+
+        button {
+            font-size: 14px;
+            padding: 5px;
+            border: none;
+            color: blue;
+            background: none;
+        }
+
+        .icon1 {
+            color: white;
+            border-radius: 50%;
+            padding: 3% 4%;
+            width: 4%;
+            background-image: linear-gradient(-45deg, rgb(85, 0, 182), rgb(218, 74, 139));
+        }
+
+        .icon2 {
+
+            color: white;
+            width: 4%;
+            padding: 3% 4%;
+            border-radius: 50%;
+            text-align: center;
+            background-color: black;
+        }
+
+        .icon3 {
+
+            color: white;
+            padding: 3% 4%;
+            border-radius: 50%;
+            text-align: center;
+            width: 4%;
+            background-color: rgb(0, 213, 128)
+        }
+
+        .icon4 {
+
+            color: white;
+            padding: 3% 4%;
+            width: 4%;
+            border-radius: 50%;
+            background-image: linear-gradient(to bottom, rgb(182, 94, 238), rgb(82, 14, 253));
+        }
+
+        .icon5 {
+            color: white;
+            padding: 3% 4%;
+            width: 4%;
+            border-radius: 50%;
+            background-image: linear-gradient(to bottom, rgb(255, 115, 12), rgb(255, 0, 106));
+        }
+
+        .icon6 {
+
+            color: white;
+            padding: 3% 3%;
+            border-radius: 60%;
+            background-image: linear-gradient(to bottom, rgb(0, 215, 180), rgb(0, 162, 167));
+        }
+
+        .maincontainer .contact {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .maincontainer .two .p1 {
+            align-items: center;
+            display: flex;
+            top: 25px;
+            justify-content: space-evenly;
+            position: relative;
+        }
+
+        .ph {
+            font-weight: bold;
+        }
+
+        .hide {
+
+            visibility: hidden;
+        }
+
+        button p {
+            font-size: xx-small;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        @media screen and (max-width:576px) {
+            input {
+                margin-top: -10px;
+                border: none;
+                width: 100%;
+                text-align: center;
+                padding: 5%;
+                font-size: 20px;
+            }
+
+            .contact {
+                display: flex;
+                flex-direction: row;
+                overflow-x: scroll;
+                width: 100%;
+            }
+
+            .one {
+                position: relative;
+                bottom: 10px;
+            }
+
+            .maincontainer {
+                bottom: 10px;
+                padding: 40px;
+                height: 100vh;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .icon {
+                border-radius: 50%;
+                padding: 10px;
+                color: white;
+                background-color: blue;
+                position: relative;
+                right: 5px;
+                text-align: center;
+
+            }
+
+
+            img {
+                position: relative;
+                top: 30px;
+                padding: 5px;
+            }
+
+            button {
+                font-size: 14px;
+                padding: 5px;
+                border: none;
+                color: blue;
+                background: none;
+            }
+
+            .icon1 {
+                color: white;
+                border-radius: 50%;
+                padding: 3% 4%;
+                width: 4%;
+                background-image: linear-gradient(-45deg, rgb(85, 0, 182), rgb(218, 74, 139));
+            }
+
+            .icon2 {
+                color: white;
+                width: 4%;
+                padding: 3% 4%;
+                border-radius: 50%;
+                text-align: center;
+                background-color: black;
+            }
+
+            .icon3 {
+
+                color: white;
+                padding: 3% 4%;
+                border-radius: 50%;
+                text-align: center;
+                width: 4%;
+                background-color: rgb(0, 213, 128)
+            }
+
+            .icon4 {
+                color: white;
+                padding: 3% 4%;
+                width: 4%;
+                border-radius: 50%;
+                background-image: linear-gradient(to bottom, rgb(182, 94, 238), rgb(82, 14, 253));
+            }
+
+            .icon5 {
+                color: white;
+                padding: 3% 4%;
+                width: 4%;
+                border-radius: 50%;
+                background-image: linear-gradient(to bottom, rgb(255, 115, 12), rgb(255, 0, 106));
+            }
+
+            .icon6 {
+
+                color: white;
+                padding: 3% 3%;
+                border-radius: 60%;
+                background-image: linear-gradient(to bottom, rgb(0, 215, 180), rgb(0, 162, 167));
+            }
+
+            .maincontainer .contact {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .maincontainer .two .p1 {
+                align-items: center;
+                display: flex;
+                top: 25px;
+                justify-content: space-evenly;
+                position: relative;
+            }
+
+            button p {
+                font-size: xx-small;
+
+            }
+
+        }
+
+        @media screen and (max-width:768px) {
+            .maincontainer {
+                padding: 40px;
+                border: 1px solid;
+                bottom: 1px;
+                height: 100vh;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .icon {
+                border-radius: 50%;
+                padding: 10px;
+                color: white;
+                background-color: blue;
+                position: relative;
+                right: 5px;
+                text-align: center;
+
+            }
+
+            img {
+                position: relative;
+                top: 10px;
+                padding: 5px;
+            }
+
+            button {
+                font-size: 14px;
+                padding: 5px;
+                border: none;
+                color: blue;
+                background: none;
+            }
+
+            .icon1 {
+                color: white;
+                border-radius: 50%;
+                padding: 3% 4%;
+                width: 4%;
+                background-image: linear-gradient(-45deg, rgb(85, 0, 182), rgb(218, 74, 139));
+            }
+
+            .icon2 {
+                color: white;
+                width: 4%;
+                padding: 3% 4%;
+                border-radius: 50%;
+                text-align: center;
+                background-color: black;
+            }
+
+            .icon3 {
+
+                color: white;
+                padding: 3% 4%;
+                border-radius: 50%;
+                text-align: center;
+                width: 4%;
+                background-color: rgb(0, 213, 128)
+            }
+
+            .icon4 {
+
+                color: white;
+                padding: 3% 4%;
+                width: 4%;
+                border-radius: 50%;
+                background-image: linear-gradient(to bottom, rgb(182, 94, 238), rgb(82, 14, 253));
+            }
+
+            .icon5 {
+                color: white;
+                padding: 3% 4%;
+                width: 4%;
+                border-radius: 50%;
+                background-image: linear-gradient(to bottom, rgb(255, 115, 12), rgb(255, 0, 106));
+            }
+
+            .icon6 {
+
+                color: white;
+                padding: 3% 3%;
+                border-radius: 60%;
+                background-image: linear-gradient(to bottom, rgb(0, 215, 180), rgb(0, 162, 167));
+            }
+
+            .maincontainer .two .contact {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                overflow: scroll;
+                justify-content: space-between;
+            }
+
+            .maincontainer .two .p1 {
+                align-items: center;
+                display: flex;
+                top: 25px;
+                justify-content: space-evenly;
+                position: relative;
+            }
+
+            button p {
+                font-size: xx-small;
+            }
+        }
+
+        @media screen and(max-width:992px) {
+            .scrollable .contact {
+                display: flex;
+
+                flex-direction: row;
+                width: 100%;
+            }
+
+            .maincontainer {
+                padding: 40px;
+                height: 100vh;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .icon {
+                border-radius: 50%;
+                padding: 10px;
+                color: white;
+                background-color: blue;
+                position: relative;
+                right: 5px;
+                text-align: center;
+            }
+
+            img {
+                position: relative;
+                top: 10px;
+                padding: 5px;
+            }
+
+            button {
+                font-size: 14px;
+                padding: 5px;
+                border: none;
+                color: blue;
+                background: none;
+            }
+
+            .icon1 {
+                color: white;
+                border-radius: 50%;
+                padding: 3% 4%;
+                width: 4%;
+                background-image: linear-gradient(-45deg, rgb(85, 0, 182), rgb(218, 74, 139));
+            }
+
+            .icon2 {
+                color: white;
+                width: 4%;
+                padding: 3% 4%;
+                border-radius: 50%;
+                text-align: center;
+                background-color: black;
+            }
+
+            .icon3 {
+
+                color: white;
+                padding: 3% 4%;
+                border-radius: 50%;
+                text-align: center;
+                width: 4%;
+                background-color: rgb(0, 213, 128)
+            }
+
+            .icon4 {
+
+                color: white;
+                padding: 3% 4%;
+                width: 4%;
+                border-radius: 50%;
+                background-image: linear-gradient(to bottom, rgb(182, 94, 238), rgb(82, 14, 253));
+            }
+
+            .icon5 {
+                color: white;
+                padding: 3% 4%;
+                width: 4%;
+                border-radius: 50%;
+                background-image: linear-gradient(to bottom, rgb(255, 115, 12), rgb(255, 0, 106));
+            }
+
+            .icon6 {
+                color: white;
+                padding: 3% 3%;
+                border-radius: 60%;
+                background-image: linear-gradient(to bottom, rgb(0, 215, 180), rgb(0, 162, 167));
+            }
+
+            .maincontainer .contact {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .maincontainer .two .p1 {
+                align-items: center;
+                display: flex;
+                top: 25px;
+                justify-content: space-evenly;
+                position: relative;
+            }
+
+            button p {
+                font-size: xx-small;
+            }
+        }
+
+        @media screen and (max-width:1200px) {
+            .scrollable .contact {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+            }
+
+            .maincontainer {
+                padding: 40px;
+                height: 100vh;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .icon {
+                border-radius: 50%;
+                padding: 10px;
+                color: white;
+                background-color: blue;
+                position: relative;
+                right: 5px;
+                text-align: center;
+            }
+
+            img {
+                position: relative;
+                top: 10px;
+                padding: 5px;
+            }
+
+            button {
+                font-size: 14px;
+                padding: 5px;
+                border: none;
+                color: blue;
+                background: none;
+            }
+
+            .icon1 {
+                color: white;
+                border-radius: 50%;
+                padding: 3% 4%;
+                width: 4%;
+                background-image: linear-gradient(-45deg, rgb(85, 0, 182), rgb(218, 74, 139));
+            }
+
+            .icon2 {
+                color: white;
+                width: 4%;
+                padding: 3% 4%;
+                border-radius: 50%;
+                text-align: center;
+                background-color: black;
+            }
+
+            .icon3 {
+
+                color: white;
+                padding: 3% 4%;
+                border-radius: 50%;
+                text-align: center;
+                width: 4%;
+                background-color: rgb(0, 213, 128)
+            }
+
+            .icon4 {
+
+                color: white;
+                padding: 3% 4%;
+                width: 4%;
+                border-radius: 50%;
+                background-image: linear-gradient(to bottom, rgb(182, 94, 238), rgb(82, 14, 253));
+            }
+
+            .icon5 {
+                color: white;
+                padding: 3% 4%;
+                width: 4%;
+                border-radius: 50%;
+                background-image: linear-gradient(to bottom, rgb(255, 115, 12), rgb(255, 0, 106));
+            }
+
+            .icon6 {
+
+                color: white;
+                padding: 3% 3%;
+                border-radius: 60%;
+                background-image: linear-gradient(to bottom, rgb(0, 215, 180), rgb(0, 162, 167));
+            }
+
+            .maincontainer .contact {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .maincontainer .two .p1 {
+                align-items: center;
+                display: flex;
+
+
+                justify-content: space-evenly;
+                position: relative;
+            }
+
+            button p {
+                font-size: xx-small;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="maincontainer">
+        <div class="one">
+            <h4>NEW CALL FROM</h4>
+            <div class="maindata">
+                <span class="icon">SP</span>Shadow Properties<select id="opt">
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                </select><br />
+                <p>Your caller ID displays as <span class="ph">(202)944-5641</span>.<a href="#">Change</a></span></p>
+                <img src="c:\Users\user\Downloads\find.png" height="20px" width="20px"><input type="text"
+                    placeholder="type a name or number" />
+                <hr>
+                <div class="scrollable">
+                    <div class="contact">
+                        <div class="icon1">P</div>
+                        <div class="icon2">#</div>
+                        <div class="icon3">P</div>
+                        <div class="icon4">#</div>
+                        <div class="icon5">U</div>
+                        <div class="icon6">RR</div>
+                    </div>
+                </div>
+                <div class="two">
+                    <div class="p1">
+                        <button>1<p class="hide">dd</p></button>
+                        <button>2<p>ABC</p></button>
+                        <button>3<P>DEF</P></button>
+                    </div>
+
+                    <div class="p1">
+                        <button>4<P>GHI</P></button>
+                        <button>5<P>JKL</P></button>
+                        <button>6<P>MNO</P></button>
+                    </div>
+
+                    <div class="p1">
+                        <button>7<P>PQRS</P></button>
+                        <button>8<P>TUV</P></button>
+                        <button>9<P>WXYZ</P></button>
+                    </div>
+
+                    <div class="p1">
+                        <button>
+                            <P>*</P>
+                        </button>
+                        <button>
+                            <P>0</P>
+                        </button>
+                        <button>
+                            <P>#</P>
+                        </button>
+                    </div>
+                    <div class="p1"><button>+</button></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
